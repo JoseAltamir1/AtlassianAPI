@@ -3,9 +3,8 @@ Created on Jun 2, 2017
 
 @author: Jose
 '''
-from src.net import AtlassianClient
+from src.net.AtlassianClient import AtlassianClient
 import src.utils.Utilities
-
 
 @ src.utils.Utilities.singleton
 class MyClass(AtlassianClient):
@@ -26,3 +25,5 @@ class MyClass(AtlassianClient):
         '''
         global authRequest
         self.executeRequest('GET', authRequest)
+    
+  
